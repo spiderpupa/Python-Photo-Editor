@@ -1,0 +1,25 @@
+<RCC>
+  <qresource prefix="icon">
+    <file>move tool.png</file>
+    <file>search.png</file>
+    <file>copy.png</file>
+    <file>paste.png</file>
+    <file>redo.png</file>
+    <file>undo.png</file>
+    <file>scissor.png</file>
+    <file>purge.png</file>
+    <file>spoid.png</file>
+    <file>rub.png</file>
+    <file>stamp.png</file>
+    <file>move tool.png</file>
+    <file>lasso.png</file>
+    <file>rectangular marquee.png</file>
+    <file>text.png</file>
+    <file>brush.png</file>
+    <file>paint bucket.png</file>
+    <file>enlarge.png</file>
+    <file>reduction.png</file>
+    <file>eraser.png</file>
+    <file>crop.png</file>
+  </qresource>
+</RCC>

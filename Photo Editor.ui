@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1417</width>
+    <height>986</height>
+   </rect>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Photo Editor</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(130, 130, 130);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1417</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="tabletTracking">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(74, 77, 80);
+color: rgb(255, 250, 242);</string>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>파일</string>
+    </property>
+    <addaction name="action"/>
+    <addaction name="action_2"/>
+    <addaction name="action_3"/>
+    <addaction name="separator"/>
+    <addaction name="action_5"/>
+    <addaction name="action_6"/>
+    <addaction name="separator"/>
+    <addaction name="action_8"/>
+    <addaction name="action_9"/>
+    <addaction name="separator"/>
+    <addaction name="action_72"/>
+    <addaction name="separator"/>
+    <addaction name="action_29"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>편집</string>
+    </property>
+    <addaction name="action_11"/>
+    <addaction name="action_12"/>
+    <addaction name="separator"/>
+    <addaction name="action_16"/>
+    <addaction name="action_14"/>
+    <addaction name="action_15"/>
+    <addaction name="separator"/>
+    <addaction name="action_18"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>이미지</string>
+    </property>
+    <widget class="QMenu" name="menu_3">
+     <property name="title">
+      <string>색상 조정</string>
+     </property>
+     <addaction name="action_22"/>
+     <addaction name="action_23"/>
+     <addaction name="action_24"/>
+     <addaction name="action_25"/>
+     <addaction name="action_26"/>
+     <addaction name="separator"/>
+     <addaction name="action_28"/>
+    </widget>
+    <widget class="QMenu" name="menu_13">
+     <property name="title">
+      <string>모드</string>
+     </property>
+     <addaction name="actionRGB"/>
+     <addaction name="action_53"/>
+     <addaction name="action_54"/>
+    </widget>
+    <addaction name="menu_13"/>
+    <addaction name="separator"/>
+    <addaction name="menu_3"/>
+    <addaction name="separator"/>
+    <addaction name="action_30"/>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>레이어</string>
+    </property>
+    <widget class="QMenu" name="menu_14">
+     <property name="title">
+      <string>변형</string>
+     </property>
+     <addaction name="action_60"/>
+     <addaction name="action_61"/>
+     <addaction name="action90"/>
+    </widget>
+    <addaction name="action_55"/>
+    <addaction name="action_56"/>
+    <addaction name="action_57"/>
+    <addaction name="separator"/>
+    <addaction name="menu_14"/>
+    <addaction name="separator"/>
+    <addaction name="action_63"/>
+    <addaction name="action_64"/>
+   </widget>
+   <widget class="QMenu" name="menu_7">
+    <property name="title">
+     <string>선택</string>
+    </property>
+    <addaction name="action_69"/>
+    <addaction name="action_70"/>
+   </widget>
+   <widget class="QMenu" name="menu_8">
+    <property name="title">
+     <string>필터</string>
+    </property>
+    <widget class="QMenu" name="menu_15">
+     <property name="title">
+      <string>흐림 처리</string>
+     </property>
+     <addaction name="action_66"/>
+     <addaction name="action_71"/>
+    </widget>
+    <addaction name="menu_15"/>
+   </widget>
+   <widget class="QMenu" name="menu_9">
+    <property name="title">
+     <string>보기</string>
+    </property>
+    <addaction name="action_32"/>
+    <addaction name="action_33"/>
+    <addaction name="separator"/>
+    <addaction name="action_67"/>
+    <addaction name="action_68"/>
+   </widget>
+   <widget class="QMenu" name="menu_10">
+    <property name="title">
+     <string>창</string>
+    </property>
+    <addaction name="action_49"/>
+    <addaction name="separator"/>
+    <addaction name="action_51"/>
+    <addaction name="action_52"/>
+   </widget>
+   <widget class="QMenu" name="menu_11">
+    <property name="title">
+     <string>도움말</string>
+    </property>
+    <addaction name="action_48"/>
+   </widget>
+   <widget class="QMenu" name="menu_12">
+    <property name="title">
+     <string>도구</string>
+    </property>
+    <addaction name="action_40"/>
+    <addaction name="separator"/>
+    <addaction name="action_38"/>
+    <addaction name="action_39"/>
+    <addaction name="action_46"/>
+    <addaction name="separator"/>
+    <addaction name="action_35"/>
+    <addaction name="actionwldnrl"/>
+    <addaction name="action_34"/>
+    <addaction name="separator"/>
+    <addaction name="action_43"/>
+    <addaction name="action_44"/>
+    <addaction name="action_45"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+   <addaction name="menu_7"/>
+   <addaction name="menu_12"/>
+   <addaction name="menu_8"/>
+   <addaction name="menu_9"/>
+   <addaction name="menu_10"/>
+   <addaction name="menu_11"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(74, 77, 80);
+color: rgb(255, 250, 242);</string>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(74, 77, 80);
+color: rgb(255, 250, 242);</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_40"/>
+   <addaction name="action_38"/>
+   <addaction name="action_39"/>
+   <addaction name="action_46"/>
+   <addaction name="action_30"/>
+   <addaction name="action_34"/>
+   <addaction name="action_35"/>
+   <addaction name="actionwldnrl"/>
+   <addaction name="action_43"/>
+   <addaction name="action_44"/>
+   <addaction name="action_45"/>
+   <addaction name="action_36"/>
+   <addaction name="action_32"/>
+   <addaction name="action_33"/>
+  </widget>
+  <action name="action">
+   <property name="text">
+    <string>불러오기</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>최근 파일</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>새로 만들기</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>저장</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>다른 이름으로 저장</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>들여오기</string>
+   </property>
+  </action>
+  <action name="action_9">
+   <property name="text">
+    <string>내보내기</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/undo.png</normaloff>:/icon/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>실행 취소</string>
+   </property>
+  </action>
+  <action name="action_12">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/redo.png</normaloff>:/icon/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>다시 실행</string>
+   </property>
+  </action>
+  <action name="action_14">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/scissor.png</normaloff>:/icon/scissor.png</iconset>
+   </property>
+   <property name="text">
+    <string>잘라내기</string>
+   </property>
+  </action>
+  <action name="action_15">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/paste.png</normaloff>:/icon/paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>붙여넣기</string>
+   </property>
+  </action>
+  <action name="action_16">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/copy.png</normaloff>:/icon/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>복사</string>
+   </property>
+  </action>
+  <action name="actionwldnrl">
+   <property name="icon">
+    <iconset>
+     <normaloff>img/eraser.png</normaloff>img/eraser.png</iconset>
+   </property>
+   <property name="text">
+    <string>지우기</string>
+   </property>
+  </action>
+  <action name="action_18">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/search.png</normaloff>:/icon/search.png</iconset>
+   </property>
+   <property name="text">
+    <string>텍스트 찾기</string>
+   </property>
+  </action>
+  <action name="action_22">
+   <property name="text">
+    <string>명도/대비</string>
+   </property>
+  </action>
+  <action name="action_23">
+   <property name="text">
+    <string>레벨</string>
+   </property>
+  </action>
+  <action name="action_24">
+   <property name="text">
+    <string>곡선</string>
+   </property>
+  </action>
+  <action name="action_25">
+   <property name="text">
+    <string>노출</string>
+   </property>
+  </action>
+  <action name="action_26">
+   <property name="text">
+    <string>활기</string>
+   </property>
+  </action>
+  <action name="action_28">
+   <property name="text">
+    <string>균일화</string>
+   </property>
+  </action>
+  <action name="action_29">
+   <property name="text">
+    <string>종료</string>
+   </property>
+  </action>
+  <action name="action_30">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/crop.png</normaloff>:/icon/crop.png</iconset>
+   </property>
+   <property name="text">
+    <string>자르기</string>
+   </property>
+  </action>
+  <action name="action_32">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/enlarge.png</normaloff>:/icon/enlarge.png</iconset>
+   </property>
+   <property name="text">
+    <string>확대</string>
+   </property>
+  </action>
+  <action name="action_33">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/reduction.png</normaloff>:/icon/reduction.png</iconset>
+   </property>
+   <property name="text">
+    <string>축소</string>
+   </property>
+  </action>
+  <action name="action_34">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/paint bucket.png</normaloff>:/icon/paint bucket.png</iconset>
+   </property>
+   <property name="text">
+    <string>색 채우기</string>
+   </property>
+  </action>
+  <action name="action_35">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/brush.png</normaloff>:/icon/brush.png</iconset>
+   </property>
+   <property name="text">
+    <string>브러시</string>
+   </property>
+  </action>
+  <action name="action_36">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/text.png</normaloff>:/icon/text.png</iconset>
+   </property>
+   <property name="text">
+    <string>텍스트 도구</string>
+   </property>
+  </action>
+  <action name="action_38">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/rectangular marquee.png</normaloff>:/icon/rectangular marquee.png</iconset>
+   </property>
+   <property name="text">
+    <string>사각형 선택 영역 도구</string>
+   </property>
+  </action>
+  <action name="action_39">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/lasso.png</normaloff>:/icon/lasso.png</iconset>
+   </property>
+   <property name="text">
+    <string>자유 선택 도구</string>
+   </property>
+  </action>
+  <action name="action_40">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/move tool.png</normaloff>:/icon/move tool.png</iconset>
+   </property>
+   <property name="text">
+    <string>이동 도구</string>
+   </property>
+  </action>
+  <action name="action_43">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/stamp.png</normaloff>:/icon/stamp.png</iconset>
+   </property>
+   <property name="text">
+    <string>도장 도구</string>
+   </property>
+  </action>
+  <action name="action_44">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/rub.png</normaloff>:/icon/rub.png</iconset>
+   </property>
+   <property name="text">
+    <string>문지르기 도구</string>
+   </property>
+  </action>
+  <action name="action_45">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/spoid.png</normaloff>:/icon/spoid.png</iconset>
+   </property>
+   <property name="text">
+    <string>색상 추출 도구</string>
+   </property>
+  </action>
+  <action name="action_46">
+   <property name="icon">
+    <iconset resource="img/images.qrc">
+     <normaloff>:/icon/purge.png</normaloff>:/icon/purge.png</iconset>
+   </property>
+   <property name="text">
+    <string>퍼지 영역 도구</string>
+   </property>
+  </action>
+  <action name="action_48">
+   <property name="text">
+    <string>도움말</string>
+   </property>
+  </action>
+  <action name="action_49">
+   <property name="text">
+    <string>최근 닫은 탭</string>
+   </property>
+  </action>
+  <action name="action_51">
+   <property name="text">
+    <string>탭 숨기기</string>
+   </property>
+  </action>
+  <action name="action_52">
+   <property name="text">
+    <string>탭 보이기</string>
+   </property>
+  </action>
+  <action name="actionRGB">
+   <property name="text">
+    <string>RGB</string>
+   </property>
+  </action>
+  <action name="action_53">
+   <property name="text">
+    <string>그레이스케일</string>
+   </property>
+  </action>
+  <action name="action_54">
+   <property name="text">
+    <string>인덱스</string>
+   </property>
+  </action>
+  <action name="action_55">
+   <property name="text">
+    <string>새 레이어</string>
+   </property>
+  </action>
+  <action name="action_56">
+   <property name="text">
+    <string>레이어 복제</string>
+   </property>
+  </action>
+  <action name="action_57">
+   <property name="text">
+    <string>레이어 삭제</string>
+   </property>
+  </action>
+  <action name="action_60">
+   <property name="text">
+    <string>좌우 뒤집기</string>
+   </property>
+  </action>
+  <action name="action90">
+   <property name="text">
+    <string>90º 뒤집기</string>
+   </property>
+  </action>
+  <action name="action_61">
+   <property name="text">
+    <string>상하 뒤집기</string>
+   </property>
+  </action>
+  <action name="action_63">
+   <property name="text">
+    <string>레이어 앞으로 보내기</string>
+   </property>
+  </action>
+  <action name="action_64">
+   <property name="text">
+    <string>레이어 뒤로 보내기</string>
+   </property>
+  </action>
+  <action name="action_66">
+   <property name="text">
+    <string>가우시안 필터</string>
+   </property>
+  </action>
+  <action name="action_67">
+   <property name="text">
+    <string>창 크기를 이미지에 맞춤</string>
+   </property>
+  </action>
+  <action name="action_68">
+   <property name="text">
+    <string>전체화면</string>
+   </property>
+  </action>
+  <action name="action_69">
+   <property name="text">
+    <string>모두 선택</string>
+   </property>
+  </action>
+  <action name="action_70">
+   <property name="text">
+    <string>반전</string>
+   </property>
+  </action>
+  <action name="action_71">
+   <property name="text">
+    <string>중간값 필터</string>
+   </property>
+  </action>
+  <action name="action_72">
+   <property name="text">
+    <string>설정</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="img/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
