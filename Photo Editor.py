@@ -128,6 +128,7 @@ class Ui_MainWindow(object):
         self.action_28.setObjectName("action_28")
         self.action_29 = QtWidgets.QAction(MainWindow)
         self.action_29.setObjectName("action_29")
+        self.action_29.setShortcut("Alt+F4")
         self.action_30 = QtWidgets.QAction(MainWindow)
         icon7 = QtGui.QIcon()
         icon7.addPixmap(QtGui.QPixmap(":/icon/crop.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
